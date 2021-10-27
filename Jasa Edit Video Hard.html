@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jasa Edit Video Hard - Jasa Content Creator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet type="text/css" href="jasaartikel.css">
+	<script>
+		function submit_contact() {
+			var namadepan = document.getElementById("namadepan").value;
+			var namabelakang = document.getElementById("namabelakang").value;
+			var email = document.getElementById("email").value;
+			var nomorhp = document.getElementById("nomorhp").value;
+			var keterangan = document.getElementById("keterangan").value;
+			
+			document.getElementById("contactID").submit();
+			
+			alert("Nama Depan: " + namadepan + " \nNama Belakang: " + namabelakang + " \nEmail: " + email + " \nNomor HP: " + nomorhp + " \nKeterangan: " + keterangan + "\n\nFormulir berhasil dikirim. Terima kasih!");
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><h1>Jasa Content Creator</h1></a>
+	</div>
+	
+	<main>
+		<div class="info">
+			<h2>Jasa Edit Video Hard</h2>
+			<p>Jasa ini menawarkan untuk mengedit video Anda yang lebih kompleks, seperti mengedit short movie.</p>
+			<p class="harga">Rp. 300.000</p>
+		</div>
+		<img src="Jasa Edit Video Hard.png" alt="Jasa Edit Video Hard" />
+		<h2 class="formulir">Isi Formulir</h2>
+		<form id="contactID" action="#" method="POST">
+			<input placeholder="Nama Depan" type="text" class="nama" name="namadepan" id="namadepan" />
+			<input placeholder="Nama Belakang" type="text" class="nama" name="namabelakang" id="namabelakang" /><br>
+			<input placeholder="Alamat Email" type="text" class="email" name="email" id="email" /><br>
+			<input placeholder="Nomor HP" type="number" class="email" name="nomorhp" id="nomorhp" /><br>
+			<textarea placeholder="Keterangan" class="email" style="height:160px" name="keterangan" id="keterangan"></textarea><br>
+			<button onclick="submit_contact()">Kirim</button>
+		</form>
+	</main>
+</body>
+</html>
